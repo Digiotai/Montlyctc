@@ -33,33 +33,7 @@ def predict():
     '''
     User =request.form['msg']
     
-    if User==1:
-        print("Business Analyst")
-    
-    elif User == 2:
-        print("Junior Consultant")
-    elif User ==3:
-        print("Senior Consultant")
-    elif User ==4:
-        print("Manager")
-    elif User == 5:
-        print("Country Manager")
-    elif User == 6:
-        print("Region Manger")
-    elif User == 7:
-        print("Partner")
-    elif User == 8:
-        print("Senior Patner")
-    elif User == 9:
-        print("C-Level")
-    elif User == 10:
-        print("CEO")
-    elif User > 10:
-        print("Enter the position level between 1 to 10")
-                                
-    else:
-        print("")
-
+   
     user = np.array(User)
     user = user.reshape(-1,1)
     user = model.predict(user)
